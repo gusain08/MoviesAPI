@@ -7,6 +7,7 @@ const Movies = () => {
  <div className='container mt-5'>
       <div className="row">
       {
+        
         movies.map((elemnet ,key)=> {
        return(      
         <Movie 
