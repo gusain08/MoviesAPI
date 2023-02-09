@@ -6,15 +6,23 @@ const Movies = () => {
     <>
  <div className='container mt-5'>
       <div className="row">
-      {
-        movies.map((elemnet ,key)=> {
+      {/* {
+        movies.map((elemnet,indexof)=> {
        return(      
-        <Movie 
+        <Movie key={indexof}
          title={elemnet.Title} 
           year={elemnet.Year}
          poster={elemnet.Poster}/>
        )
         })
+     } */}
+
+     {
+      movies.map((elemnet)=>{
+        return(
+          <Movie title={elemnet.Title} year={elemnet.Year} poster={elemnet.Poster}  />
+        )
+      })
      }
      </div>
     </div>  

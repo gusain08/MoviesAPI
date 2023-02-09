@@ -6,12 +6,11 @@ function Movie(props) {
             
                 <div className='col-md-3 card-wrapper'>
                 <Card>
-                        <Card.Img variant="top" src={props.poster} />
+                        <Card.Img variant="top" src={props.poster}/>
                         <Card.Body>
                             <Card.Title>{props.title}</Card.Title>
                             <Card.Text>
                                 {props.year}
-                                
                             </Card.Text>
                         </Card.Body>
                     </Card>

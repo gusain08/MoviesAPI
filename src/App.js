@@ -3,6 +3,7 @@ import Movie from "./Components/Movie";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Movies from "./Components/Movies";
+import User from "./Components/User";
 import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
 import Blog from "./Components/Blog";
 
@@ -13,7 +14,7 @@ function App() {
     <Router>
       <Header/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<User/>}/>
         <Route path="/Movies" element={<Movies/>} />
         <Route path="/Blog" element={<Blog/>} />
       </Routes>
